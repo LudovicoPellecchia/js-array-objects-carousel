@@ -19,6 +19,7 @@
 }
 .side-slideshow-preview{
     flex-basis: 30%;
+    position: relative;
 }
 
 
@@ -33,13 +34,30 @@
     bottom: 0;
 }
 
+
 .side-img-preview{
     width: 100%;
 }
-
 
 .side-img{
     height: 100px;
     width: 100%;
     object-fit: cover;
+}
+
+.my-btn{
+    background-color: rgba(255, 255, 255, 0.745);
+    color: blac;
+    padding: 10px;
+}
+
+.up{
+    position: absolute;
+    right: 50%;
+    top: 10px;
+}
+.down{
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
 }

@@ -22,8 +22,18 @@ const images = [
     }
 ];
 
+//Recupero i container dell'html al cui interno stamperò gli elementi creati in js
+const mainImgBanner = document.querySelector(".main-img-preview")
+
+
 
 for (let i = 0; i < images.length; i++){
     const currentPreview = images[i]
     console.log(currentPreview.title);
+    const currentImag = images[i].image
+
+    let img = document.createElement("img")
+    img.src = currentImag
+
+    mainImgBanner.innerHTML+=img
 }
