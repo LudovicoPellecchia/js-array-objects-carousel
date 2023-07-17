@@ -24,16 +24,23 @@ const images = [
 
 //Recupero i container dell'html al cui interno stamperò gli elementi creati in js
 const mainImgBanner = document.querySelector(".main-img-preview")
-
+const mainImgPreview = document.querySelector(".main-img-container")
 
 
 for (let i = 0; i < images.length; i++){
+    
     const currentPreview = images[i]
     console.log(currentPreview.title);
     const currentImag = images[i].image
 
-    let img = document.createElement("img")
-    img.src = currentImag
+    let mainImgContainer = document.createElement("div")
+    mainImgContainer.classList.add("main-img-container")
+    mainImgBanner.append(mainImgContainer)
 
-    mainImgBanner.innerHTML+=img
+    let mainImg = document.createElement("img")
+    mainImg.src = currentImag
+
+    mainImgContainer.append(mainImg)
+    mainImg.classList.add("img-main-preview-text")
+    mainImg.classList.add("text-white")
 }

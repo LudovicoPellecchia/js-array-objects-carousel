@@ -16,7 +16,24 @@
     left: 0;
     top: 0;
     position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ;
 }
+
+.main-img-container.active{
+    opacity: 1;
+}
+
+.main-img-container img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
 .side-slideshow-preview{
     flex-basis: 30%;
     position: relative;
